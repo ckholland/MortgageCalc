@@ -45,4 +45,4 @@ down_payment=0
 
 payment = mortgage_calculator(loan_amount,interest_rate,loan_term, annual_property_tax, annual_home_insurance, pmi_rate, down_payment)
 
-st.markdown("#{payment}")
+st.markdown(f"### Total Monthly Payment: ${payment:,.2f}")
