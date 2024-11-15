@@ -36,8 +36,14 @@ def mortgage_calculator(loan_amount, interest_rate, loan_term, annual_property_t
 
 
 loan_amount = st.number_input("Enter loan amount:", value = "loan amount")
+interest_rate = st.number_input("Enter rate:", value = "rate %")
+loan_term = st.number_input("Term:", value = "years")
+annual_property_tax=0
+annual_home_insurance=0
+pmi_rate=0
+down_payment=0
 
-payment = mortgage_calculator(loan)
+payment = mortgage_calculator(loan_amount,interest_rate,loan_term)
 
 """
     Calculates the monthly mortgage payment, including principal & interest, property tax, home insurance, and PMI.
